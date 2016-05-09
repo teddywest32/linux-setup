@@ -7,6 +7,11 @@ if [[ $REPLY =~ ^[Yy]$ ]] ; then
     sudo sudo apt-get update
 fi
 
+echo " ->Installing GNU Stow"
+echo
+
+sudo apt-get install stow
+
 echo " -> Installing Firefox Nightly"
 echo
 
