@@ -7,9 +7,39 @@ if [[ $REPLY =~ ^[Yy]$ ]] ; then
     sudo sudo apt-get update
 fi
 
+
+
 echo " ->Installing GNU Stow"
 echo
 sudo apt-get install stow
+echo
+
+
+
+echo " -> Installing Curl"
+echo
+sudo apt-get install curl
+echo
+
+
+
+echo " -> Installing HTOP"
+echo
+sudo apt-get install htop
+echo
+
+
+
+echo " -> Installing CTAGS"
+echo
+sudo apt-get install ctags
+echo
+
+
+
+echo " -> Installing QtPass"
+echo
+sudo apt-get install qtpass
 echo
 
 
@@ -27,10 +57,12 @@ sudo apt-get install sublime-text-installer
 echo
 
 
+
 echo " -> Installing VIM"
 echo
 sudo apt-get install vim
 echo
+
 
 
 echo " -> Installing VIM-GTK"
@@ -38,23 +70,6 @@ echo
 sudo apt-get install vim-gtk
 echo
 
-
-echo " -> Installing Curl"
-echo
-sudo apt-get install Curl
-echo
-
-
-echo " -> Installing HTOP"
-echo
-sudo apt-get install htop
-echo
-
-
-echo " -> Installing CTAGS"
-echo
-sudo apt-get install ctags
-echo
 
 
 echo " -> Installing Dropbox"
