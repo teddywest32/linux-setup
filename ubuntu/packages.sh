@@ -7,67 +7,58 @@ if [[ $REPLY =~ ^[Yy]$ ]] ; then
     sudo sudo apt-get update
 fi
 
-
-
-echo " ->Installing GNU Stow"
+echo " -> Installing Packages"
 echo
-sudo apt-get install stow
-echo
+packagelist=(
+
+# TOOLS
+# ------------------------
+
+stow
+curl
+ctags
+htop
+qtpass
+bash-builtins
+bash-completion
 
 
+# BROWSERS
+# ------------------------
 
-echo " -> Installing Curl"
-echo
-sudo apt-get install curl
-echo
-
+firefox-trunk
 
 
-echo " -> Installing HTOP"
-echo
-sudo apt-get install htop
-echo
+# EDITORS
+# ------------------------
+
+vim
+vim-gtk
+atom
+sublime-text-installer
 
 
+# LAMP
+# ------------------------
 
-echo " -> Installing CTAGS"
-echo
-sudo apt-get install ctags
-echo
+apache2
 
+mysql-server 
+mysql-client
 
+php-gettext
+php7.0-mysql
+php7.0-curl
+php7.0-json
+php7.0-mbstring 
+php7.0-cgi
+php7.0
+libapache2-mod-php7.0
 
-echo " -> Installing QtPass"
-echo
-sudo apt-get install qtpass
-echo
+phpmyadmin
 
-
-
-echo " -> Installing Firefox Nightly"
-echo
-sudo apt-get install firefox-trunk
-echo
-
-
-
-echo " -> Installing Sublime Text 3"
-echo
-sudo apt-get install sublime-text-installer
-echo
-
-
-
-echo " -> Installing VIM"
-echo
-sudo apt-get install vim
-echo
-
-
-
-echo " -> Installing VIM-GTK"
-echo
-sudo apt-get install vim-gtk
+)
+sudo apt-get install ${packagelist[@]}
 echo
 
 
@@ -78,41 +69,3 @@ if [[ -f ~/dropbox-dist/dropboxd ]] ; then
 	cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 	echo
 fi
-
-
-
-echo " -> Installing Apache"
-echo
-sudo apt-get install apache2
-echo
-
-
-
-echo " -> Installing MySQL"
-echo
-sudo apt-get install mysql-server mysql-client
-echo
-
-
-
-echo " -> Installing PHP"
-echo
-packagelist=(
-php-gettext
-php7.0-mysql
-php7.0-curl
-php7.0-json
-php7.0-mbstring 
-php7.0-cgi
-php7.0
-libapache2-mod-php7.0
-)
-sudo apt-get install ${packagelist[@]}
-echo
-
-
-
-echo " -> Installing PHPMYADMIN"
-echo
-sudo apt-get install phpmyadmin
-echo
