@@ -72,9 +72,47 @@ echo
 
 
 
-echo " -> Installing Dropbox"
-echo
-if [ -f ~/dropbox-dist/dropboxd ] ; then
+if [[ -f ~/dropbox-dist/dropboxd ]] ; then
+	echo " -> Installing Dropbox"
+	echo
 	cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+	echo
 fi
+
+
+
+echo " -> Installing Apache"
+echo
+sudo apt-get install apache2
+echo
+
+
+
+echo " -> Installing MySQL"
+echo
+sudo apt-get install mysql-server mysql-client
+echo
+
+
+
+echo " -> Installing PHP"
+echo
+packagelist=(
+php-gettext
+php7.0-mysql
+php7.0-curl
+php7.0-json
+php7.0-mbstring 
+php7.0-cgi
+php7.0
+libapache2-mod-php7.0
+)
+sudo apt-get install ${packagelist[@]}
+echo
+
+
+
+echo " -> Installing PHPMYADMIN"
+echo
+sudo apt-get install phpmyadmin
 echo
