@@ -1,17 +1,22 @@
 #!/bin/bash
 
-echo "--------------"
-echo "INSTALL SCRIPT"
-echo "--------------"
-
-echo ""
+echo
 
 if [[ -z $1 ]] || [[ $1 = "help" ]] ; then
-    echo "Usage :"
-    echo "  help                   Show the help"
-    echo "  ubuntu-repositories    Install Ubuntu Repositories"
-    echo "  ubuntu-packages        Install Ubuntu packages"
-    echo "  ubuntu-directories     Set up the Directories"
+    echo "Usage:"
+    echo "  help                    Show the help"
+    echo "  ubuntu-directories      Set up the Directories"
+    echo "  ubuntu-repositories     Install Ubuntu Repositories"
+    echo "  ubuntu-packages         Install Packages (Aptitude/Bower/Node)"
+    echo "  ubuntu-aptitude         Install Aptitude Packages"
+    echo "  ubuntu-bower            Install Bower Packages"
+    echo "  ubuntu-node             Install Node Packages"
+fi
+
+if [[ $1 = "ubuntu-directories" ]] ; then
+
+    source ubuntu/directories.sh
+
 fi
 
 if [[ $1 = "ubuntu-repositories" ]] ; then
@@ -22,12 +27,28 @@ fi
 
 if [[ $1 = "ubuntu-packages" ]] ; then
 
-    source ubuntu/packages.sh
+    source ubuntu/packages/aptitude.sh
+    source ubuntu/packages/bower.sh
+    source ubuntu/packages/node.sh
 
 fi
 
-if [[ $1 = "ubuntu-directories" ]] ; then
+if [[ $1 = "ubuntu-aptitude" ]] ; then
 
-    source ubuntu/directories.sh
+    source ubuntu/packages/aptitude.sh
 
 fi
+
+if [[ $1 = "ubuntu-bower" ]] ; then
+
+    source ubuntu/packages/bower.sh
+
+fi
+
+if [[ $1 = "ubuntu-node" ]] ; then
+
+    source ubuntu/packages/node.sh
+
+fi
+
+echo

@@ -7,7 +7,9 @@ if [[ $REPLY =~ ^[Yy]$ ]] ; then
     sudo sudo apt-get update
 fi
 
-echo " -> Installing Packages"
+echo
+
+echo " -> Installing Aptitude Packages"
 echo
 packagelist=(
 
@@ -21,6 +23,12 @@ htop
 qtpass
 bash-builtins
 bash-completion
+
+
+# PACKAGE MANAGERS
+# ------------------------
+
+composer
 
 
 # BROWSERS
@@ -51,6 +59,7 @@ php7.0-mysql
 php7.0-curl
 php7.0-json
 php7.0-mbstring 
+php7.0-sqlite3
 php7.0-cgi
 php7.0
 libapache2-mod-php7.0
