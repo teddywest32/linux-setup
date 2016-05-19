@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source _utilities.sh
+
 echo
 
 if [[ -z $1 ]] || [[ $1 = "help" ]] ; then

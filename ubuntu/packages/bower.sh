@@ -1,2 +1,1 @@
-echo " -> Installing Bower Packages"
-echo
+info " -> Installing Bower Packages"

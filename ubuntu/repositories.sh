@@ -1,29 +1,29 @@
 #!/bin/bash
 
-read -p " <- Do you want to install the PHP repository? [y|n] " -r
+question " <- Do you want to install the PHP repository? [y|n] "
 echo
 
-if [[ $REPLY =~ ^[Yy]$ ]] ; then
+if if_yes ; then
     sudo add-apt-repository ppa:ondrej/php
 fi
 
-read -p " <- Do you want to install the Firefox Nightly repository? [y|n] " -r
+question " <- Do you want to install the Firefox Nightly repository? [y|n] "
 echo
 
-if [[ $REPLY =~ ^[Yy]$ ]] ; then
+if if_yes ; then
     sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa
 fi
 
-read -p " <- Do you want to install the Atom Editor repository? [y|n] " -r
+question " <- Do you want to install the Atom Editor repository? [y|n] "
 echo
 
-if [[ $REPLY =~ ^[Yy]$ ]] ; then
+if if_yes ; then
     sudo add-apt-repository ppa:webupd8team/atom
 fi
 
-read -p " <- Do you want to install the Sublime Text 3 repository? [y|n] " -r
+question " <- Do you want to install the Sublime Text 3 repository? [y|n] "
 echo
 
-if [[ $REPLY =~ ^[Yy]$ ]] ; then
+if if_yes ; then
     sudo add-apt-repository ppa:webupd8team/sublime-text-3
 fi

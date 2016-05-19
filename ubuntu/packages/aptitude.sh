@@ -1,16 +1,14 @@
 #!/bin/bash
 
-read -p " <- Do you want to update the Repositories? [y|n] " -r
-echo
+question " <- Do you want to update the Repositories? [y|n] "
 
-if [[ $REPLY =~ ^[Yy]$ ]] ; then
+if is_yes ; then
     sudo sudo apt-get update
 fi
 
-echo
 
-echo " -> Installing Aptitude Packages"
-echo
+info " -> Installing Aptitude Packages"
+
 packagelist=(
 
 # TOOLS
@@ -80,18 +78,15 @@ phpmyadmin
 
 )
 sudo apt-get install ${packagelist[@]}
-echo
 
 
-echo " -> Mapping PHP5.6 to PHP"
-echo
+info " -> Mapping PHP5.6 to PHP"
+
 sudo ln -sf /usr/bin/php5.6 /etc/alternatives/php
-echo
 
 
 if [[ -f ~/dropbox-dist/dropboxd ]] ; then
-    echo " -> Installing Dropbox"
-    echo
+    info " -> Installing Dropbox"
     cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
     echo
 fi
