@@ -1,5 +1,12 @@
 #!/bin/bash
 
+read -p " <- Do you want to install the PHP repository? [y|n] " -r
+echo
+
+if [[ $REPLY =~ ^[Yy]$ ]] ; then
+    sudo add-apt-repository ppa:ondrej/php
+fi
+
 read -p " <- Do you want to install the Firefox Nightly repository? [y|n] " -r
 echo
 

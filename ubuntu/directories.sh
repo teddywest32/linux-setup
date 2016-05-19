@@ -4,7 +4,7 @@ read -p " <- Have you installed Dropbox and would you like to setup Code folder 
 echo
 
 if [[ $REPLY =~ ^[Yy]$ ]] ; then
-	NAME=`whoami`
+    NAME=`whoami`
     COMMAND="ln -sf /media/$NAME/Data/Code /home/$NAME/Code"
     $COMMAND
 fi
