@@ -6,10 +6,8 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
-		"Base16 Color Schemes",
 		"BracketHighlighter",
 		"Color Highlighter",
-		"Colorsublime",
 		"CSS Format",
 		"CTags",
 		"DocBlockr",
