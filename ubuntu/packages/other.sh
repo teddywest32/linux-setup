@@ -38,7 +38,7 @@ if [[ ! -f "$FILENAME" ]] ; then
     headline " -> Installing Skype"
     cd ~ && wget "http://www.skype.com/go/getskype-linux-beta-ubuntu-64" -O "skype.deb"
     sudo dpkg -i skype.deb
-    sudo apt-get install -f
+    sudo apt-get -f install
     rm skype.deb
     echo
 fi
