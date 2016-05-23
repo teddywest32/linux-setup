@@ -105,3 +105,9 @@ fi
 DIRECTORY="$HOME/.config/sublime-text-3/Packages/User/"
 ln -sf "$HOME/Code/Personal/linux-setup/data/sublime-text-3/Package Control.sublime-settings" "$DIRECTORY/Package Control.sublime-settings"
 ln -sf "$HOME/Code/Personal/linux-setup/data/sublime-text-3/Preferences.sublime-settings" "$DIRECTORY/Preferences.sublime-settings"
+
+
+headline " -> Setting up Konsole Themes"
+
+FILENAME="$HOME/.local/share/konsole/SpareGray.colorscheme"
+ln -sf "$HOME/Code/Personal/linux-setup/data/konsole/SpaceGray.colorscheme" "$FILENAME"
