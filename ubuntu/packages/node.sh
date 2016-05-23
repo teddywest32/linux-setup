@@ -1,4 +1,4 @@
-info " -> Installing Node Aptitude Packages"
+headline " -> Installing Node Aptitude Packages"
 
 packagelist=(
 
@@ -11,12 +11,12 @@ npm
 sudo apt-get install ${packagelist[@]}
 
 
-info " -> Mapping nodejs to node"
+headline " -> Mapping nodejs to node"
 
 sudo ln -sf /usr/bin/nodejs /usr/bin/node
 
 
-info " -> Installing Node Packages"
+headline " -> Installing Node Packages"
 
 packagelist=(
 

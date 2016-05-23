@@ -1,1 +1,1 @@
-info " -> Installing Bower Packages"
+headline " -> Installing Bower Packages"

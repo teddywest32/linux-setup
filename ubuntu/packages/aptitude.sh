@@ -1,13 +1,13 @@
 #!/bin/bash
 
-question " <- Do you want to update the Repositories? [y|n] "
+ask_question " <- Do you want to update the Repositories? [y|n] "
 
-if is_yes ; then
+if said_yes ; then
     sudo sudo apt-get update
 fi
 
 
-info " -> Installing Aptitude Packages"
+headline " -> Installing Aptitude Packages"
 
 packagelist=(
 
@@ -49,7 +49,7 @@ sublime-text-installer
 
 apache2
 
-mysql-server 
+mysql-server
 mysql-client
 
 php-gettext
@@ -57,7 +57,7 @@ php-gettext
 php7.0-mysql
 php7.0-curl
 php7.0-json
-php7.0-mbstring 
+php7.0-mbstring
 php7.0-mcrypt
 php7.0-sqlite3
 php7.0-cgi
@@ -67,8 +67,8 @@ libapache2-mod-php7.0
 php5.6-mysql
 php5.6-curl
 php5.6-json
-php5.6-mbstring 
-php5.6-mcrypt 
+php5.6-mbstring
+php5.6-mcrypt
 php5.6-sqlite3
 php5.6-cgi
 php5.6
@@ -80,13 +80,13 @@ phpmyadmin
 sudo apt-get install ${packagelist[@]}
 
 
-info " -> Mapping PHP5.6 to PHP"
+headline " -> Mapping PHP5.6 to PHP"
 
 sudo ln -sf /usr/bin/php5.6 /etc/alternatives/php
 
 
 if [[ -f ~/dropbox-dist/dropboxd ]] ; then
-    info " -> Installing Dropbox"
+    headline " -> Installing Dropbox"
     cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
     echo
 fi
