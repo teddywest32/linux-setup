@@ -84,6 +84,7 @@ headline " -> Mapping PHP5.6 to PHP"
 
 sudo ln -sf /usr/bin/php5.6 /etc/alternatives/php
 
+
 FILENAME="$HOME/.dropbox-dist/dropboxd"
 if [[ ! -f "$FILENAME" ]] ; then
     headline " -> Installing Dropbox"
