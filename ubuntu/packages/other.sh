@@ -42,3 +42,13 @@ if [[ ! -f "$FILENAME" ]] ; then
     rm skype.deb
     echo
 fi
+
+
+FILENAME="$HOME/.bash_it"
+if [[ ! -f "$FILENAME" ]] ; then
+    headline " -> Installing Bash-It"
+    git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+    sh ~/.bash_it/install.sh
+    source ~/.bashrc
+    echo
+fi
