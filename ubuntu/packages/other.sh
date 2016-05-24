@@ -44,14 +44,26 @@ if [[ ! -f "$FILENAME" ]] ; then
 fi
 
 
-FILENAME="$HOME/.bash_it"
+FILENAME="$HOME/.bash_it/install.sh"
 if [[ ! -f "$FILENAME" ]] ; then
     headline " -> Installing Bash-It"
+    cd ~
     git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
-    sh ~/.bash_it/install.sh
+    ~/.bash_it/install.sh
     source ~/.bashrc
     bash-it enable completions bash-it git gulp npm ssh system
     bash-it enable plugins alias-completion base fzf git
     bash-it enable alias general apt curl git laravel npm vim
+    echo
+fi
+
+
+FILENAME="$HOME/.fzf/install"
+if [[ ! -f "$FILENAME" ]] ; then
+    headline " -> Installing FZF"
+    cd ~
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    ~/.fzf/install
+    source ~/.bashrc
     echo
 fi
