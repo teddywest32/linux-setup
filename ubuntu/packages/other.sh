@@ -50,5 +50,8 @@ if [[ ! -f "$FILENAME" ]] ; then
     git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
     sh ~/.bash_it/install.sh
     source ~/.bashrc
+    bash-it enable completions bash-it git gulp npm ssh system
+    bash-it enable plugins alias-completion base fzf git
+    bash-it enable alias general apt curl git laravel npm vim
     echo
 fi
