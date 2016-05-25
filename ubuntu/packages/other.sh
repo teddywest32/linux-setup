@@ -67,3 +67,13 @@ if [[ ! -f "$FILENAME" ]] ; then
     source ~/.bashrc
     echo
 fi
+
+
+FILENAME="$HOME/Applications/Skype-Electron/build.sh"
+if [[ ! -f "$FILENAME" ]] ; then
+    headline " -> Installing Skype Electron"
+    cd ~/Applications
+    git clone --depth=1 https://github.com/GyozaGuy/Skype-Electron.git
+    cd Skype-Electron
+    ./build.sh
+fi

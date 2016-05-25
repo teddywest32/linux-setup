@@ -25,5 +25,6 @@ packagelist=(
 
 gulp
 bower
+electron-packager
 )
 sudo npm -g install ${packagelist[@]}

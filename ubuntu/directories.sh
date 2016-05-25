@@ -8,3 +8,12 @@ if said_yes ; then
     COMMAND="ln -sf /media/$NAME/Data/Code /home/$NAME/Code"
     $COMMAND
 fi
+
+ask_question " <- Have you installed Dropbox and would you like to setup Applications folder [y|n] "
+echo
+
+if said_yes ; then
+    NAME=`whoami`
+    COMMAND="ln -sf /media/$NAME/Data/Applications /home/$NAME/Applications"
+    $COMMAND
+fi
