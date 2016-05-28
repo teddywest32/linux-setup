@@ -1,3 +1,5 @@
+#!/bin/bash
+
 headline " -> Installing Node Aptitude Packages"
 
 packagelist=(
@@ -27,4 +29,5 @@ gulp
 bower
 electron-packager
 )
+
 sudo npm -g install ${packagelist[@]}

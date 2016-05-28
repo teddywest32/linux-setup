@@ -77,4 +77,5 @@ libapache2-mod-php5.6
 phpmyadmin
 
 )
+
 sudo apt-get install ${packagelist[@]}

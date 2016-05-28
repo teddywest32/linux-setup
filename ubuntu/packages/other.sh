@@ -30,7 +30,7 @@ ln -sf "$HOME/Code/Personal/linux-setup/data/sublime-text-3/Preferences.sublime-
 headline " -> Setting up Konsole Themes"
 
 DIRECTORY="$HOME/.local/share/konsole/"
-cp -f "$HOME/Code/Personal/linux-setup/data/konsole/SpaceGray.colorscheme" "$DIRECTORY/SpareGray.colorscheme"
+cp -f "$HOME/Code/Personal/linux-setup/data/konsole/SpaceGray.colorscheme" "$DIRECTORY/SpaceGray.colorscheme"
 
 
 FILENAME="/usr/bin/skype"
