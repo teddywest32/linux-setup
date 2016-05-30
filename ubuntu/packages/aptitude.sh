@@ -21,6 +21,7 @@ htop
 qtpass
 bash-builtins
 bash-completion
+virtualbox
 
 
 # PACKAGE MANAGERS
@@ -32,7 +33,9 @@ composer
 # BROWSERS
 # ------------------------
 
+firefox
 firefox-trunk
+chromium-browser
 
 
 # EDITORS
