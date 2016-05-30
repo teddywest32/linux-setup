@@ -27,3 +27,10 @@ echo
 if said_yes ; then
     sudo add-apt-repository ppa:webupd8team/sublime-text-3
 fi
+
+ask_question " <- Do you want to install the Neofetch repository? [y|n] "
+echo
+
+if said_yes ; then
+    sudo add-apt-repository ppa:dawidd0811/neofetch
+fi
