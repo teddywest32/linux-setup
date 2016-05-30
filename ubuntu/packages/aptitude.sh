@@ -21,6 +21,9 @@ htop
 qtpass
 bash-builtins
 bash-completion
+scrot
+screenfetch
+neofetch
 virtualbox
 
 
