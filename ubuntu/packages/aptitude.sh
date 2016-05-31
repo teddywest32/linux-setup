@@ -69,6 +69,7 @@ php7.0-json
 php7.0-mbstring
 php7.0-mcrypt
 php7.0-sqlite3
+php7.0-gd
 php7.0-cgi
 php7.0
 libapache2-mod-php7.0
@@ -79,6 +80,7 @@ php5.6-json
 php5.6-mbstring
 php5.6-mcrypt
 php5.6-sqlite3
+php5.6-gd
 php5.6-cgi
 php5.6
 libapache2-mod-php5.6
