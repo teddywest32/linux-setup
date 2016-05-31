@@ -26,6 +26,8 @@ screenfetch
 neofetch
 spotify-client
 virtualbox
+gnome-keyring
+libgcrypt20-dev
 
 
 # PACKAGE MANAGERS
