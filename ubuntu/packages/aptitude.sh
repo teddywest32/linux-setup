@@ -24,6 +24,7 @@ bash-completion
 scrot
 screenfetch
 neofetch
+spotify-client
 virtualbox
 
 
