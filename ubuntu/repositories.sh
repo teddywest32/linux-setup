@@ -1,5 +1,12 @@
 #!/bin/bash
 
+ask_question " <- Do you want to install the Kubuntu Backports repository? [y|n] "
+echo
+
+if said_yes ; then
+    sudo add-apt-repository ppa:kubuntu-ppa/backports
+fi
+
 ask_question " <- Do you want to install the PHP repository? [y|n] "
 echo
 
