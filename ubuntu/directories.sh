@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ask_question " <- Would you like to setup Code folder [y|n] "
+ask_question " <- Would you like to setup the Code folder [y|n] "
 echo
 
 if said_yes ; then
@@ -10,7 +10,7 @@ if said_yes ; then
 fi
 
 
-ask_question " <- Would you like to setup Applications folder [y|n] "
+ask_question " <- Would you like to setup the Applications folder [y|n] "
 echo
 
 if said_yes ; then
@@ -20,11 +20,21 @@ if said_yes ; then
 fi
 
 
-ask_question " <- Would you like to setup Password Store folder [y|n] "
+ask_question " <- Would you like to setup the Backups folder [y|n] "
 echo
 
 if said_yes ; then
     NAME=`whoami`
-    COMMAND="ln -sf /media/$NAME/Data/PassStore /home/$NAME/.password-store"
+    COMMAND="ln -sf /media/$NAME/Data/Backups /home/$NAME/Backups"
+    $COMMAND
+fi
+
+
+ask_question " <- Would you like to setup the Password Store folder [y|n] "
+echo
+
+if said_yes ; then
+    NAME=`whoami`
+    COMMAND="ln -sf /media/$NAME/Data/.password-store /home/$NAME/.password-store"
     $COMMAND
 fi
