@@ -28,6 +28,7 @@ spotify-client
 virtualbox
 gnome-keyring
 libgcrypt20-dev
+kcolorchooser
 
 
 # PACKAGE MANAGERS
