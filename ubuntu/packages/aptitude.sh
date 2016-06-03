@@ -71,6 +71,7 @@ php7.0-json
 php7.0-mbstring
 php7.0-mcrypt
 php7.0-mysql
+php7.0-soap
 php7.0-sqlite3
 php7.0-xml
 php7.0-zip
@@ -84,6 +85,7 @@ php5.6-json
 php5.6-mbstring
 php5.6-mcrypt
 php5.6-mysql
+php5.6-soap
 php5.6-sqlite3
 php5.6-xml
 php5.6-zip
