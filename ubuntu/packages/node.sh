@@ -29,8 +29,15 @@ npm-check
 gulp
 bower
 electron-packager
+
+
+# SYNTAX
+# ------------------------
+
+jshint
 stylelint
 postcss
+
 )
 
 sudo npm -g install ${packagelist[@]}
