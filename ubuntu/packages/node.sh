@@ -25,9 +25,12 @@ packagelist=(
 # TOOLS
 # ------------------------
 
+npm-check
 gulp
 bower
 electron-packager
+stylelint
+postcss
 )
 
 sudo npm -g install ${packagelist[@]}
