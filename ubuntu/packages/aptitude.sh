@@ -27,8 +27,14 @@ neofetch
 spotify-client
 virtualbox
 gnome-keyring
-libgcrypt20-dev
 kcolorchooser
+
+
+# LIBRARIES
+# ------------------------
+
+libgcrypt20-dev
+libnotify-bin
 
 
 # PACKAGE MANAGERS
