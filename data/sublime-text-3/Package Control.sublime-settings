@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
+		"Bootstrap 3 Snippets",
 		"BracketHighlighter",
 		"Color Highlighter",
 		"CSS Format",
@@ -19,6 +20,7 @@
 		"HTMLBeautify",
 		"Javascript Beautify",
 		"JSHint Gutter",
+		"larastrap-snippets",
 		"Laravel 4 Artisan",
 		"Laravel Blade Highlighter",
 		"LESS",
@@ -36,5 +38,9 @@
 		"SublimeLinter-php",
 		"SublimeLinter-phpcs",
 		"Theme - Spacegray"
+	],
+	"repositories":
+	[
+		"https://github.com/joshbenham/larastrap-snippets.git"
 	]
 }
