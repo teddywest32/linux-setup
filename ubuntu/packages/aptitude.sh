@@ -54,6 +54,14 @@ atom
 sublime-text-installer
 
 
+# GRAPHICAL
+# ------------------------
+
+karbon
+kolourpaint4
+krita
+
+
 # LAMP
 # ------------------------
 
