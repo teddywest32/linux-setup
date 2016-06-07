@@ -44,6 +44,17 @@ if [[ ! -f "$FILENAME" ]] ; then
 fi
 
 
+FILENAME="/usr/bin/teamviewer"
+if [[ ! -f "$FILENAME" ]] ; then
+    headline " -> Installing TeamViewer"
+    cd ~ && wget "http://download.teamviewer.com/download/teamviewer_i386.deb" -O "teamviewer_i386.deb"
+    sudo dpkg -i teamviewer_i386.deb
+    sudo apt-get -f install
+    rm teamviewer_i386.deb
+    echo
+fi
+
+
 FILENAME="$HOME/.bash_it/install.sh"
 if [[ ! -f "$FILENAME" ]] ; then
     headline " -> Installing Bash-It"
