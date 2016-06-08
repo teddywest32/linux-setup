@@ -66,6 +66,7 @@ sublime-text-installer
 karbon
 kolourpaint4
 krita
+kazam
 
 
 # LAMP
