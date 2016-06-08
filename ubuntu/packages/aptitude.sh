@@ -18,6 +18,7 @@ stow
 curl
 ctags
 htop
+glances
 qtpass
 bash-builtins
 bash-completion
@@ -27,7 +28,6 @@ neofetch
 spotify-client
 virtualbox
 gnome-keyring
-kcolorchooser
 
 
 # LIBRARIES
@@ -63,6 +63,7 @@ sublime-text-installer
 # GRAPHICAL
 # ------------------------
 
+kcolorchooser
 karbon
 kolourpaint4
 krita
