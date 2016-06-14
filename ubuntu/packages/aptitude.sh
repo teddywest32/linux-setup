@@ -25,6 +25,7 @@ bash-completion
 scrot
 screenfetch
 neofetch
+ack-grep
 spotify-client
 virtualbox
 gnome-keyring
