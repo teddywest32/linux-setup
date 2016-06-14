@@ -29,8 +29,12 @@ ln -sf "$HOME/Code/Personal/linux-setup/data/sublime-text-3/Preferences.sublime-
 
 headline " -> Setting up Konsole Themes"
 
-DIRECTORY="$HOME/.local/share/konsole/"
-cp -f "$HOME/Code/Personal/linux-setup/data/konsole/SpaceGray.colorscheme" "$DIRECTORY/SpaceGray.colorscheme"
+DIRECTORY="$HOME/.local/share/konsole"
+SRCDIRECTORY="$HOME/Code/Personal/linux-setup/data/konsole"
+for FILENAME in $SRCDIRECTORY/*.colorscheme; do
+    NEWFILENAME=$(basename "$FILENAME")
+    cp -f "$HOME/Code/Personal/linux-setup/data/konsole/$NEWFILENAME" "$DIRECTORY/$NEWFILENAME"
+done
 
 
 FILENAME="/usr/bin/skype"
