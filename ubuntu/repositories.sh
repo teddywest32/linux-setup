@@ -14,6 +14,13 @@ if said_yes ; then
     sudo add-apt-repository ppa:ondrej/php
 fi
 
+ask_question " <- Do you want to install the GIT repository? [y|n] "
+echo
+
+if said_yes ; then
+    sudo add-apt-repository ppa:git-core/ppa
+fi
+
 ask_question " <- Do you want to install the Firefox Nightly repository? [y|n] "
 echo
 
