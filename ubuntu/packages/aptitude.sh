@@ -29,6 +29,12 @@ ack-grep
 spotify-client
 virtualbox
 gnome-keyring
+
+
+# FTP Clients
+# ------------------------
+
+filezilla
 kftpgrabber
 
 
