@@ -29,6 +29,7 @@ ack-grep
 spotify-client
 virtualbox
 gnome-keyring
+trimage
 
 
 # FTP Clients
