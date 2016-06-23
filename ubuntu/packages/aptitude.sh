@@ -18,6 +18,7 @@ stow
 curl
 ctags
 htop
+unrar
 glances
 qtpass
 bash-builtins
