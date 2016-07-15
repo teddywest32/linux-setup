@@ -1,2 +1,3 @@
-echo " -> Installing Bower Packages"
-echo
+#!/bin/bash
+
+headline " -> Installing Bower Packages"
